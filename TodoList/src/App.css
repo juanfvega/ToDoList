@@ -1,0 +1,94 @@
+/* CSS Variables generated from Kigen.design */
+:root {
+  --victoria-50: #f1f0f8;
+  --victoria-100: #dfdaef;
+  --victoria-200: #c3bae2;
+  --victoria-300: #aa9dd6;
+  --victoria-400: #9482ca;
+  --victoria-500: #8069be;
+  --victoria-600: #6d51af;
+  --victoria-700: #584091;
+  --victoria-800: #412f6d;
+  --victoria-900: #241840;
+  --victoria-950: #140c27;
+}
+
+/* App Container */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  top: 50px; /* Posición desde arriba */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado horizontalmente */
+  background: linear-gradient(135deg, var(--victoria-50), var(--victoria-100));
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(65, 47, 109, 0.1);
+}
+
+/* Header */
+.app-title {
+  text-align: center;
+  color: var(--victoria-800);
+  margin: 0.5rem 0; /* Poco margen arriba y abajo */
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 2.9rem;
+  text-shadow: 0 2px 4px rgba(65, 47, 109, 0.1);
+}
+
+/* Input Container */
+.input-container {
+  margin-bottom: 1rem; /* Menos espacio debajo del input */
+}
+
+/* Tasks List Container */
+.tasks-list {
+  margin-top: 0.5rem; /* Muy poco espacio arriba de las tareas */
+}
+
+/* Task Item */
+.task-item {
+  padding: 15px;
+  border: 2px solid var(--victoria-200);
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: var(--victoria-50);
+  box-shadow: 0 2px 8px rgba(128, 105, 190, 0.1);
+}
+
+.task-item:hover {
+  background: var(--victoria-100);
+  border-color: var(--victoria-300);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(128, 105, 190, 0.2);
+}
+
+/* Task Content (checkbox + text) */
+.task-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Task Checkbox */
+.task-checkbox {
+  margin-right: 10px;
+}
+
+/* Task Text */
+.task-text {
+  transition: all 0.2s ease;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.2rem;
+  color: var(--victoria-700);
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: var(--victoria-400);
+}
